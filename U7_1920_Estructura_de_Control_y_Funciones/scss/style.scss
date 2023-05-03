@@ -1,0 +1,22 @@
+$background-color: #2ced11, #f11b0d, #ef0fe2, #11eedc, #e5ee11, #888377, #f0960e;
+
+body {
+  table {
+    @for $i from 1 through length($background-color) {
+      tr:nth-child(#{$i}) {
+        background-color: nth($background-color, $i);
+      }
+    }
+    td{
+        border: 1px black solid;
+    }
+  }
+}
+
+$heading-sizes: (2rem, 1.8rem, 1.6rem, 1.4rem, 1.2rem, 1rem);
+@for $i from 1 through 6 {
+    h#{$i} {
+      font-size: nth($heading-sizes, $i);
+    }
+  }
+  

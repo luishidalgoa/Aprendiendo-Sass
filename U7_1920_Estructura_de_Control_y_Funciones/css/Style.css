@@ -1,0 +1,50 @@
+body table tr:nth-child(1) {
+  background-color: #2ced11;
+}
+body table tr:nth-child(2) {
+  background-color: #f11b0d;
+}
+body table tr:nth-child(3) {
+  background-color: #ef0fe2;
+}
+body table tr:nth-child(4) {
+  background-color: #11eedc;
+}
+body table tr:nth-child(5) {
+  background-color: #e5ee11;
+}
+body table tr:nth-child(6) {
+  background-color: #888377;
+}
+body table tr:nth-child(7) {
+  background-color: #f0960e;
+}
+body table td {
+  border: 1px black solid;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=Style.css.map */
