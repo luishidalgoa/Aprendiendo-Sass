@@ -1,0 +1,46 @@
+@import "variables";
+@import "funciones";
+@import "mixins";
+@import "estructuras";
+@import "references";
+@import "themes";
+@import "menu";
+#izquierda{
+     img{
+        position: relative;
+        margin-left: 20%;
+     }
+    span{
+        font-size: 35px;
+        color: $color-primary;
+    }
+    p{
+        padding: $p-1;
+    }
+}
+#derecha{
+    text-align: center;
+    p{
+        font-size: 2rem;
+    }
+    p span{
+        font-size: 1rem!important;
+    }
+    div:nth-child(2){
+        position: relative;
+        content: '';
+        height:300px;
+        width: 1px;
+        background-color: black;
+    }
+    svg{
+        margin-left: 35%;
+    }
+}
+#about_me{
+    @include centrarLinea;
+}
+  
+
+
+  //image

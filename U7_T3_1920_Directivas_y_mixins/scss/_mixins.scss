@@ -1,0 +1,10 @@
+@mixin centrar{
+    display: flex;
+    justify-content: center;
+}
+@mixin centrarLinea{
+    span{
+        text-align: center;
+        display: inline-block;
+    }
+}

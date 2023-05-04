@@ -1,0 +1,17 @@
+@import "mixins";
+nav{
+    @include centrar;
+    ul{
+        gap: 10px;
+        display: flex;
+        li{
+            list-style: none;
+            padding: 5px;
+            font-size: 25px;
+            a{
+                color: blue;
+                text-decoration: none;
+            }
+        }
+    }
+}
