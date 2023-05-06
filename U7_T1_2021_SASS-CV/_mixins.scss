@@ -1,0 +1,14 @@
+@use "_vars.scss";
+@mixin darkMode(){
+    @if($theme=='dark'){
+        background-color: $bg-color;
+        color: $text-color;
+    }
+}
+
+@mixin reset(){
+    margin: 0;
+}
+@mixin centrado(){
+    margin: 40px;
+}

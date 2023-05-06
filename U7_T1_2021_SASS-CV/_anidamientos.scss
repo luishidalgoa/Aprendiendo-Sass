@@ -1,0 +1,51 @@
+@use "vars.scss";
+@import "functions.scss";
+  
+
+body{
+    .full-name{
+        font-size: 70px
+    }
+    @include darkMode();
+    p,h1,h2,h3,h4,h5,h6{
+        @include reset();
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @for $i from 1 through length($title){
+            .details{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .section:nth-child(#{$i}){
+                    display: flex;
+                    flex-direction: column; gap: 20px;
+                    .section__title{
+                        display: flex;
+                        flex-direction: column;
+                        color: colorSectionTitle($i)!important;
+                    }
+                    .section__title::after{
+                        position: relative;
+                        content: '';
+                        width: 100%!important;
+                        background-color: black;
+                        padding: 1px;
+                    }
+                    .section__list{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+.container{
+    @include centrado();
+}
+
